@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterDeMasters.master.cs" Inherits="RegistroUsuarioRodrigoSandoval.GUI.MasterDeMasters" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="src/css/materialize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <script src="src/js/jquery-2.1.1.min.js"></script>
+    <script src="src/js/materialize.min.js"></script>
+    <title></title>
+</head>
+<body class="grey lighten-4">
+    <nav>
+		<div class="blue nav-wrapper">
+			<a href="MenuPrincipal.aspx" class="brand-logo">Menú Principal</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="AltaUsuario.aspx">Registrar Usuarios</a></li>
+                <li><a href="Dashboard.aspx">Dashboard</a></li> 
+			</ul>
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="AltaUsuario.aspx">Registrar Usuario</a></li>
+                <li><a href="Dashboard.aspx">Dashboard</a></li> 
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+    <form id="form1" runat="server">
+    <div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <footer class="page-footer blue">
+          <div class="container">
+            <div class="row">
+                <div class="col s12" style="text-align: center">
+                <h5 class="white-text"></h5>
+                <p class="grey-text text-lighten-4"> </p>
+
+              </div>                
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+                Registro de usuarios
+                <a class="grey-text text-lighten-4 right" href="#!">Rodrigo Sandoval</a>
+            </div>
+          </div>
+        </footer>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>            
+</body>
+</html>
